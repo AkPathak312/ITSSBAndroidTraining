@@ -22,14 +22,10 @@ public class AddNewDev extends AppCompatActivity {
     }
 
     public void add(View view) {
-     //   MainActivity.Developer developer=new MainActivity.Developer(name.getText().toString(),desg.getText().toString());
-        if(btnAdd.getText().toString()=="Save Developer"){
             Intent intent=new Intent();
             intent.putExtra("devname",name.getText().toString());
             intent.putExtra("devdesg",desg.getText().toString());
             setResult(RESULT_OK,intent);
             finish();
-        }
-
     }
 }
